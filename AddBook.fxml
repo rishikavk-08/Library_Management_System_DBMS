@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddBookController">
+   <top>
+      <AnchorPane prefHeight="658.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="122.0" layoutY="48.0" prefHeight="18.0" prefWidth="55.0" />
+            <AnchorPane prefHeight="57.0" prefWidth="702.0" style="-fx-background-color: #20B2AA;">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="73.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Details" wrappingWidth="148.3590087890625">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/action_113-book_info-read-notebook-detail-512.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="129.0" layoutY="102.0" prefHeight="18.0" prefWidth="75.0" text="Book Title" />
+            <TextField fx:id="title" layoutX="129.0" layoutY="128.0" prefHeight="26.0" prefWidth="437.0" />
+            <Label layoutX="129.0" layoutY="171.0" prefHeight="18.0" prefWidth="55.0" text="Author" />
+            <TextField fx:id="author" layoutX="129.0" layoutY="198.0" prefHeight="26.0" prefWidth="437.0" />
+            <Label layoutX="129.0" layoutY="239.0" prefHeight="18.0" prefWidth="55.0" text="Edition" />
+            <TextField fx:id="edition" layoutX="129.0" layoutY="265.0" prefHeight="26.0" prefWidth="437.0" />
+            <Label layoutX="129.0" layoutY="309.0" prefHeight="18.0" prefWidth="55.0" text="Price" />
+            <TextField fx:id="price" layoutX="129.0" layoutY="334.0" prefHeight="26.0" prefWidth="437.0" />
+            <Label layoutX="129.0" layoutY="378.0" prefHeight="18.0" prefWidth="72.0" text="Availability" />
+            <TextField fx:id="av" layoutX="129.0" layoutY="403.0" prefHeight="26.0" prefWidth="437.0" />
+            <Label layoutX="129.0" layoutY="444.0" prefHeight="18.0" prefWidth="126.0" text="Location (In library)" />
+            <TextField fx:id="locn" layoutX="129.0" layoutY="470.0" prefHeight="26.0" prefWidth="437.0" />
+            <Button fx:id="addBook" layoutX="206.0" layoutY="534.0" mnemonicParsing="false" onAction="#AddBookclick" prefHeight="30.0" prefWidth="282.0" style="-fx-background-color: #20B2AA;" text="Add Book" />
+            <Button fx:id="CancelButton" layoutX="206.0" layoutY="579.0" mnemonicParsing="false" onAction="#CancelButtonclicked" prefHeight="31.0" prefWidth="282.0" style="-fx-background-color: #20B2AA;" text="Cancel" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="113.0" layoutY="74.0" prefHeight="18.0" prefWidth="477.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <left>
+        <AnchorPane prefHeight="467.0" prefWidth="259.0" style="-fx-background-image: #20B2AA;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="473.0" fitWidth="220.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Resources/iPhone-wallpapers-books.png" />
+                    </image>
+                    <viewport>
+                        <Rectangle2D width="400.0" />
+                    </viewport>
+                </ImageView>
+                <Line endX="290.6999816894531" endY="6.492898464202881" layoutX="-46.0" layoutY="4.0" startX="290.70001220703125" startY="455.5" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane minWidth="-Infinity" prefHeight="467.0" prefWidth="452.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="39.0" layoutY="192.0" prefHeight="25.0" prefWidth="69.0" text="Username">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernamefield" layoutX="140.0" layoutY="189.0" prefHeight="26.0" prefWidth="214.0" promptText="Enter username">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="39.0" layoutY="248.0" prefHeight="25.0" prefWidth="69.0" text="Password">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordfield" layoutX="140.0" layoutY="245.0" prefHeight="31.0" prefWidth="213.0" promptText="Enter password">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="LoginButton" layoutX="109.0" layoutY="336.0" mnemonicParsing="false" onAction="#loginbuttonclicked" prefHeight="34.0" prefWidth="252.0" style="-fx-background-color: #20B2AA;" text="LOGIN">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="CancelButton" layoutX="109.0" layoutY="386.0" mnemonicParsing="false" onAction="#Cancelbuttononaction" prefHeight="34.0" prefWidth="252.0" style="-fx-background-color: #20B2AA;" text="CANCEL">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Label fx:id="Loginlabel" alignment="CENTER" layoutX="36.0" layoutY="300.0" prefHeight="18.0" prefWidth="398.0" textAlignment="CENTER" textFill="RED" />
+                <ImageView fitHeight="76.0" fitWidth="71.0" layoutX="212.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Resources/15-151207_lock-icon-blue-lock-icon-png-free.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="368.8" prefWidth="701.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                                <TabPane layoutY="42.0" prefHeight="138.0" prefWidth="701.0" tabClosingPolicy="UNAVAILABLE">
+                                    <tabs>
+                                        <Tab text="Book_ID">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <TextField fx:id="SbookID" layoutX="204.0" layoutY="35.0" prefHeight="40.0" prefWidth="244.0" />
+                                                        <Text layoutX="46.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Book_ID :" wrappingWidth="135.7562255859375">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Button fx:id="s1" layoutX="492.0" layoutY="33.0" mnemonicParsing="false" onAction="#Search1" prefHeight="19.0" prefWidth="106.0" style="-fx-background-color: #20B2AA;" text="Search">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Title">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <TextField fx:id="Title1" layoutX="173.0" layoutY="35.0" prefHeight="40.0" prefWidth="244.0" />
+                                                        <Text layoutX="53.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Title :" wrappingWidth="135.7562255859375">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Button fx:id="s2" layoutX="465.0" layoutY="32.0" mnemonicParsing="false" onAction="#Search2" prefHeight="39.0" prefWidth="110.0" style="-fx-background-color: #20B2AA;" text="Search">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Author">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <TextField fx:id="author2" layoutX="193.0" layoutY="35.0" prefHeight="40.0" prefWidth="244.0" />
+                                                        <Text layoutX="57.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Author :" wrappingWidth="135.7562255859375">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Button fx:id="s3" layoutX="490.0" layoutY="32.0" mnemonicParsing="false" onAction="#Search3" prefHeight="39.0" prefWidth="110.0" style="-fx-background-color: #20B2AA;" text="Search">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                                <AnchorPane prefHeight="42.0" prefWidth="701.0" style="-fx-background-color: #20B2AA;">
+                                    <children>
+                                        <Text layoutX="316.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEARCH" wrappingWidth="83.56951904296875">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                        <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="283.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Resources/3134345-200.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Button fx:id="Back" layoutX="656.0" layoutY="4.0" mnemonicParsing="false" onAction="#Backclicked" prefHeight="26.0" prefWidth="32.0" style="-fx-background-color: #20B2AA;">
+                                            <graphic>
+                                                <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Resources/Back-Icon-PNG-Image-200x200.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                                <TableView fx:id="table" prefHeight="180.8" prefWidth="700.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="id" prefWidth="75.0" style="-fx-background-color: #20B2AA;" text="Book_ID" />
+                                        <TableColumn fx:id="title" minWidth="-Infinity" prefWidth="200.0" style="-fx-background-color: #70e2e4;" text="Title" />
+                                        <TableColumn fx:id="author" minWidth="-Infinity" prefWidth="125.0" style="-fx-background-color: #20B2AA;" text="Author" />
+                                        <TableColumn fx:id="edition" prefWidth="75.0" style="-fx-background-color: #70e2e4;" text="Edition" />
+                                        <TableColumn fx:id="price" prefWidth="75.0" style="-fx-background-color: #20B2AA;" text="Price" />
+                                        <TableColumn fx:id="availability" prefWidth="75.0" style="-fx-background-color: #70e2e4;" text="Availability" />
+                                        <TableColumn fx:id="loc" prefWidth="75.0" style="-fx-background-color: #20B2AA;" text="Location" />
+                                    </columns>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </padding>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="86.0" prefWidth="702.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="95.0" fitWidth="176.0" layoutX="9.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Resources/books_collage.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="130.0" fitWidth="195.0" layoutX="178.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Resources/bestbookcovers2019.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="172.0" layoutX="364.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Resources/books_collage.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="111.0" fitWidth="193.0" layoutX="501.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Resources/bestbookcovers2019.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

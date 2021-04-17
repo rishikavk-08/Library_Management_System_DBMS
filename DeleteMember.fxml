@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteMemberController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" layoutX="3.0" layoutY="2.0" prefHeight="201.0" prefWidth="694.0">
+               <columns>
+                  <TableColumn fx:id="id" minWidth="-Infinity" prefWidth="75.0" style="-fx-background-color: #20b2aa;" text="Member_ID" />
+                  <TableColumn fx:id="first" minWidth="-Infinity" prefWidth="85.0" style="-fx-background-color: #70e2e4;" text="First Name" />
+                  <TableColumn fx:id="last" minWidth="-Infinity" prefWidth="85.0" style="-fx-background-color: #20B2AA;" text="Last Name" />
+                  <TableColumn fx:id="address" minWidth="-Infinity" style="-fx-background-color: #70e2e4;" text="Address" />
+                  <TableColumn fx:id="phone" prefWidth="90.0" style="-fx-background-color: #20B2AA;" text="Phone Number" />
+                  <TableColumn fx:id="email" minWidth="-Infinity" prefWidth="120.0" style="-fx-background-color: #70e2e4;" text="Email-ID" />
+                  <TableColumn fx:id="username" prefWidth="75.0" style="-fx-background-color: #20B2AA;" text="Username" />
+                  <TableColumn fx:id="password" prefWidth="75.0" style="-fx-background-color: #70e2e4;" text="Password" />
+               </columns>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TableView>
+            <TextField fx:id="dmemberid" layoutX="26.0" layoutY="233.0" promptText="MemberID" />
+            <Label layoutX="27.0" layoutY="210.0" prefHeight="18.0" prefWidth="149.0" text="Enter Member_ID" />
+            <Label layoutX="234.0" layoutY="210.0" prefHeight="18.0" prefWidth="149.0" text="Enter Firstname" />
+            <Label layoutX="455.0" layoutY="210.0" prefHeight="18.0" prefWidth="149.0" text="Enter Lastname" />
+            <TextField fx:id="dfirstname" layoutX="233.0" layoutY="233.0" promptText="Firstname" />
+            <TextField fx:id="dlastname" layoutX="454.0" layoutY="233.0" promptText="Lastname" />
+            <Button fx:id="Delete" layoutX="160.0" layoutY="315.0" mnemonicParsing="false" onAction="#Deletememberclicked" prefHeight="39.0" prefWidth="147.0" style="-fx-background-color: #20B2AA;" text="Delete Record">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Back" layoutX="391.0" layoutY="315.0" mnemonicParsing="false" onAction="#Backclicked" prefHeight="39.0" prefWidth="147.0" style="-fx-background-color: #20B2AA;" text="Go back">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/Back-Icon-PNG-Image-200x200.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="59.0" prefWidth="702.0" style="-fx-background-color: #20B2AA;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="65.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Member" wrappingWidth="184.78871154785156">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="57.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/delete-user-2-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
